@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aroma Shop - Home</title>
+	<link rel="icon" href="../img/Fevicon.png" type="image/png">
+  <link rel="stylesheet" href="../vendors/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../vendors/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="../vendors/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="../vendors/nice-select/nice-select.css">
+  <link rel="stylesheet" href="../vendors/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/addproduct copy.css">
+</head>
+<body>
+  <!--================ Start Header Menu Area =================-->
+  <header class="header_area">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand logo_h" href="index.html"><img src="../img/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
+              <li class="nav-item active"><a class="nav-link" href="index.html">Trang chủ</a></li>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Shop</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="category.html">Sản phẩm</a></li>
+                  <li class="nav-item"><a class="nav-link" href="cart.html">Giỏ hàng</a></li>
+                </ul>
+							</li>
+							<li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="login">Đăng nhập</a></li>
+                  <li class="nav-item"><a class="nav-link" href="register">Đăng kí</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Hỗ trợ</a></li>
+            </ul>
+
+            <ul class="nav-shop">
+              <li class="nav-item"><button><i class="ti-search"></i></button></li>
+              <li class="nav-item"><button><i class="ti-shopping-cart"></i><span class="nav-shop__circle">3</span></button> </li>
+              <li class="nav-item" id="display_login">
+                  <!-- <a class="button button-header" href="#"><%=username%></a> -->
+             
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section>
+
+    <div class="framepage">
+        <div class="option-admin">
+          <nav class="link-option">
+            <a href="/admin"><i class="fa-solid fa-users"></i> <span> Quản lý User</span></a>
+            <a href="showproduct"><i class="fa-solid fa-list"></i> <span>Danh sách SP</span></a>
+            <a href="add-product"><i class="fa-solid fa-mobile-screen-button"></i><span>Thêm sản phẩm</span></a>
+            <a href="#"><i class="fa-solid fa-truck-fast"></i><span>Đang giao</span></a>
+            <a href="#"><i class="fa-solid fa-box"></i><span>Đã giao</span></a>
+            <a href="/thong_ke"><i class="fa-solid fa-chart-line"></i><span>Thống kê</span></a>
+    </nav>
+          
+        </div>
+        
+          <form  id="addmodel"   enctype="multipart/form-data">
+            <div class="option-add-product">
+                <a>Sửa dòng sản phẩm </a> 
+              </div>
+                <div class="inputBox" id="inputBox">
+                    <input type="text" placeholder="tên sản phẩm" name="name" id="nameproduct" value="<%= Model.Name %>">
+                </div>
+                <div class="inputBox" id="inputBox">
+                  <input type="text" placeholder="hãng" name="brand" id="brand" value="<%= Model.Brand%>">
+              </div>
+  
+             <div class="inputBox" id="inputBox">
+                <input type="text" placeholder="RAM" name="ram" id="ram" value="<%=Model.RAM%>"> 
+             </div>
+             <div class="inputBox" id="inputBox">
+                 <input type="text" placeholder="bộ nhớ trong" name="rom" id="rom" value="<%=Model.ROM%>"> 
+             </div>
+                <div class="inputBox" >
+                    <input type="number" placeholder="discount" name="discount" id="discount" value="<%=Model.Discount%>">
+                    <input type="file" placeholder="subject" src="<%=Model.img%>" name="formFile" id="formFile" style="border: none;">
+                </div>
+                <div class="inputBox" id="inputBox">
+                  <input type="text" placeholder="giá" name="price" id="price" value="<%=Model.Price%>"> 
+              </div>
+                  <textarea name="describe" placeholder="mô tả" id="describe" cols="30" rows="10"><%=Model.Describe%>
+                  </textarea>
+                  <input type="submit" value="Lưu" class="btn">
+        </form>
+        
+        </div>
+    </section>
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+  <script src="../js/editproduct.js"></script>
+  <script src="../js/display_login.js"></script>
+  <script>
+
+    </script>
+</body>
+</html>

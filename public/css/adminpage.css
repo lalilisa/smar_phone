@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,500,600");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+
+*{
+    font-family:"Roboto",sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    outline: none;
+    border: none;
+    list-style: none;
+}
+.height{
+
+    height: 100vh;
+}
+
+.form{
+
+    position: relative;
+}
+
+.form .fa-search{
+
+    position: absolute;
+    top:20px;
+    left: 20px;
+    color: #9ca3af;
+
+}
+
+.form span{
+
+        position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border-left: 1px solid #d1d5db;
+
+}
+
+.left-pan{
+    padding-left: 7px;
+}
+
+.left-pan i{
+   
+   padding-left: 10px;
+}
+
+.form-input{
+
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px;
+}
+
+
+.framepage{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem;
+    padding-right: 3rem;
+    gap: 2rem;
+
+}
+.option-admin{
+    padding: 1rem;
+    flex: 2 ;
+    background-color:  #42424a;
+    border-radius: 20px;
+    /* height: 100%; */
+  
+   
+}
+.link-option{
+    margin-top:3rem;
+    width: 100%;
+}
+.link-option a{
+    display: block;
+    color: white;
+    padding-left: 2.5rem;
+    padding: 1rem;
+
+}
+.link-option a i{
+    padding-right: 1rem;
+}
+.link-option a:hover{
+    background-color: #d63384;
+    border-radius: 15px;
+}
+.show-page {
+    flex: 8;
+    background: #e7e7f1;
+
+}
+.show-content{
+    display: flex;
+    justify-content:space-around;
+}
+
+#column{
+    background-color: #42424a;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    text-align: start;
+}
+.show-content{
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: start;
+}
+.show-content div{
+    text-transform: none;
+    flex: 1 1;
+    word-break: break-all;
+}
+.show-content div:nth-child(5){
+    flex: 0.5 1;
+    word-break: break-all;
+}
+.show-content .box2{
+    flex: 1.5 1;
+}
+.show-content div a{
+    display: inline-block;
+    margin: 0.5rem;
+}
+.show-content div img{
+    height: 50px;
+}
+@media(max-width:850px){
+    html{
+        font-size: 55%;
+    }
+    
+}
+.box-search{
+    margin-top: 2rem;
+}
+#btn-delete-order{
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+@media(max-width:750px){
+    .option-admin{
+        padding-top:0.3rem ;
+        background-color:transparent;
+      
+    }
+    .option-admin .link-option{
+        margin-top: 0;
+        display: flex;
+        justify-content: space-around;
+        background-color: #2b2d42;
+        border-radius: 10px;
+    }
+    .option-admin .link-option a span{
+            font-size: 0;
+    }
+    .option-admin .link-option a i{
+        font-size: 2rem;
+        height: 100%;
+    }
+    .option-admin{
+        height: 10rem;
+    }
+    .framepage{
+        display: block;
+    }
+    .option-admin .link-option{
+        margin-top: 2rem;
+    }
+}
+
+/* 
+form{
+    border-radius: 20px;
+    flex: 8 ;
+    padding: 0;
+    background-color:rgb(238, 238, 238);
+    width: 100%;
+}
+form{
+    padding-left: 2rem;
+    height: 100%;
+}
+ form .inputBox{
+    display: flex;
+    justify-content:flex-start;
+    width: 100%;
+    padding: 1rem 0.5rem;
+   
+}
+form .inputBox input{
+    width: 45%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+ form textarea{
+    resize: none;
+    width: 70%;
+    padding: 0.5rem 1rem 0 1rem;
+    margin-left: 0.7rem;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.btn{
+    display: block;
+    margin-left: 0.6rem;
+    background-color: rgb(9, 9, 236);
+    color: white;
+    border-radius: 0;
+}
+.btn:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+} */

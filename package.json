@@ -1,0 +1,46 @@
+{
+  "dependencies": {
+    "axios": "^0.26.1",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
+    "cassandra-driver": "^4.6.3",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "cryptr": "^6.0.2",
+    "dotenv": "^16.0.0",
+    "easy-tree": "^0.0.3",
+    "ejs": "^3.0.2",
+    "express": "^4.18.1",
+    "express-ejs-extend": "^0.0.1",
+    "express-session": "^1.17.2",
+    "fs-extra": "^10.0.1",
+    "googleapis": "^101.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mssql": "^8.1.0",
+    "multer": "^1.4.4",
+    "node-fetch": "^3.2.2",
+    "node-mysql": "^0.4.2",
+    "nodemailer": "^6.7.5",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.2",
+    "readline-sync": "^1.4.10",
+    "tedious": "^14.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "start": "nodemon testserver.js"
+  },
+  "name": "expressjs",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
