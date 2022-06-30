@@ -1,0 +1,10 @@
+.checknumber{
+    font-size: 0.6rem;
+    color: #e72222;
+    position:absolute;
+    top: 100%;
+    display: none;
+}
+.checknumber.active{
+    display: block;
+}
